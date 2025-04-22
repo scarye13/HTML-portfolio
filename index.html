@@ -10,15 +10,53 @@
 <body>
     <nav id="desktop-nav">
         <div class="logo">Nguyen Ngan</div>
-        <div>
-            <h1>Hi</h1>
+     
+        <div>    
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#econtact">Contact</a></li>
             </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
 
-    
+        <div class="logo">Nguyen Ngan</div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#econtact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+
+
+    </nav>
+<section id="profile">
+ <div class="section__pic-container">
+    <img src="./assets/profile-pic-3.png" alt="Nguyen Ngan profile picture">
+
+ </div>
+ <div class="section__text">
+    <p class="section__text__p1">Hello, I'm </p>
+    <h1 class="title"> Nguyen Ngan </h1>
+    <p class="section__text__p2">Frontend Developer</p>
+</div>
+<div class="btn-container">
+    <button class="btn btn-color-2" onclick="window.open(./assets/resume_nguyen_ngan.pdf')"></button>
+
+
+</section>
+
+
+
     <script src="script.js"></script>
     
 </body>
